@@ -1,0 +1,44 @@
+// train a classifier with your face
+// login to facebook
+// fetch all photos
+// run classifier on all and list all photos as follows:
+	1. photo with my tag and where my face was found
+	2. photo without my tag and my face was found
+	3. photo with my tag and my face not found
+// give quick buttons to tag/untag yourself
+
+or
+// fetch all photos
+// get squares where you were tagged
+// check if quare contains a face
+// train classifier using these faces
+
+
+-----------------------------
+FB Graph API
+
+-> Most Graph API requests require the use of access tokens which your app can generate by implementing Facebook Login.
+		https://developers.facebook.com/docs/facebook-login/access-tokens/
+		https://developers.facebook.com/docs/facebook-login/
+
+
+node : photo, comment, etc
+GET/POST graph.facebook.com
+  /{node-id}
+
+edge : relationship between nodes
+GET/POST graph.facebook.com
+  /{node-id}/{edge-name}
+
+
+
+
+ ---------------------------------------
+ AppName : kndPhotoManager
+ AppID : 238648626528810
+ AppSecret : fac7ea1588ae117abe769e7db181ddf6
+ Graph API version : v2.7
+
+https://developers.facebook.com/tools/explorer/238648626528810
+Access Token : EAADZADLacQioBAKRjZAZCKgRA19i3wWwQh0AM11sTulfKuuHGOnEqAFl0up52rmLiVDZCN0kOM1mCyEPN3xvZCWn6kWWa90uVM5eO4hegmvLxzm4ZCU7ju0DG9DhAfUYAnpPK8V0ZC4UA2nxIo73asexmr0sZBHpe8gOi3WXgDIIAgZDZD
+Permissions : email, user_photos
